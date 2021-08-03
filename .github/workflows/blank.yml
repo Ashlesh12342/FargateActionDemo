@@ -40,7 +40,7 @@ jobs:
       with:
         task-definition: task-def.json
         container-name: fargate-app
-        image: ${{ steps.build-image.outputs.image }}
+        image: 973711145336.dkr.ecr.us-east-1.amazonaws.com/my-ecr-repo:nginx
         
     
     - name: Deploy to Amazon ECS
